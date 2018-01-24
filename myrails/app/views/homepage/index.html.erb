@@ -1,0 +1,393 @@
+
+<div class="main">
+	<div class="slideshow">
+		<div class="wrapper">
+			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+			  <!-- Indicators -->
+			  <ol class="carousel-indicators">
+			    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+			    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+			    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+			    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+			    <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+			  </ol>
+
+			  <!-- Wrapper for slides -->
+			  <div class="carousel-inner">
+			    <div class="item active">
+			      <%= image_tag("3411550913268680.jpg") %>
+			      <div class="carousel-caption">
+			        ...
+			      </div>
+			    </div>
+			    <div class="item">
+			      
+			      <%= image_tag("customlogo.jpg") %>
+			      <div class="carousel-caption">
+			        ...
+			      </div>
+			    </div>
+			    <div class="item">
+				  
+				  <%= image_tag("itc_slide.png") %>
+				  <div class="carousel-caption">
+				    ...
+				  </div>
+				</div>
+				
+				<div class="item">
+				  <%= image_tag("uu-tu.png") %>
+				  <div class="carousel-caption">
+				    ...
+				  </div>
+				</div>
+
+				<div class="item">
+				  <%= image_tag("kn3866.jpg") %>
+				  <div class="carousel-caption">
+				    ...
+				  </div>
+				</div>
+			
+			  </div>
+
+			  <!-- Controls -->
+			  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+			    <span class="glyphicon glyphicon-chevron-left"></span>
+			  </a>
+			  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+			    <span class="glyphicon glyphicon-chevron-right"></span>
+			  </a>
+			</div>
+		</div>
+
+	</div><!-- .end slideshow -->
+
+	<div id="chudenam"> <!-- chay chu -->
+	   <div id="scroller">               
+	   		<div class="scrollingtext" style="">
+		   		<span id="ctl00_ScrollText_lblChuDeNam">
+		   			<span style="color:rgb(255, 0, 0);">
+		   				<marquee><em><strong>&nbsp;HỌC SINH TRƯỜNG TIỂU HỌC ABC, LUYỆN TÀI VÌ NGÀY MAI LẬP NGHIỆP</strong></em></marquee>
+		   			</span> 
+		   		</span>               
+		   	</div>            
+	   </div>
+
+	</div> <!-- end chudenam -->
+
+
+	<div class="main_content"> <!-- phan noi dung -->
+		<div class="container" style="margin: 50px auto;">
+			<div class="row">
+				<div class="col-md-9 boxleft" style="border-top: 1px solid #eaeaea; border-right: 1px solid #eaeaea; border-bottom: 1px solid #eaeaea;">
+					<div class="col-md-12 boxnews">
+						<div class="title" style="width: 100%;">
+							<div class="bgleft">
+								<span>
+									<a href="/news/index" style="color: #fff">Tin tức sự kiện</a>
+								</span>
+							</div>
+							<div class="bgright">
+								
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-12">
+					
+						<div class="col-md-6 content" style="padding: 5px;">
+							<% @report4s.each do |report|%>
+							<div class="main_frontpage">
+								<div class="main_images">
+					               	<a href="" title="" target="_self" style="border: none;background: none !important;">
+					              	 	<!-- <img width="1107" height="830" src="images/images1435460_lekhietchaoco_1_.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Nâng tầm cho Trường chuyên ABC" srcset="images/images1435460_lekhietchaoco_1_.jpg" sizes="(max-width: 1107px) 100vw, 1107px"> -->
+					              	 	<%= image_tag("images1435460_lekhietchaoco_1_.jpg", width:1107, :class => "attachment-post-thumbnail size-post-thumbnail wp-post-image") %>
+       								</a>
+    							</div>
+
+								<h3 style="color: #1F1F1F;margin: 10px 0;" title="Nâng tầm cho Trường chuyên ABC">
+       								<a href="" title="" target="_self" style="background: none !important; text-decoration: none; font-size: 23px;"><%= report.title %></a>
+    							</h3>
+    							<p style="color:#B7B7B7; font-size:11px; margin:0 !important;display: block !important;">20/01/2016</p>
+    							<div class="main-desc">
+       								<p><%= report.description %><a class="more-link" href="">Xem chi tiết…</a></p>
+    							</div>
+							</div>
+							<% end %>
+						</div>
+						
+
+						<% @reports.each do |report| %>
+						<div class="col-md-6">
+							<div class="normal_frontpage_theme4">
+								<ul id="yt_accordion108" class="normal-content-theme4">
+									<li class="normal_items_theme4 active">
+										<a href="" target="_self" style="text-shadow:none !important;background: none !important;text-decoration:none;font-size:13px !important;text-transform: none !important;" class="opened">  
+       										<strong style="" title="Khai mạc kỳ thi chọn Học sinh giỏi quốc gia THPT năm 2016"><%= report.title %></strong>
+       									</a>
+           								<ul class="normal_content_accor" style="position: relative; display: block; height: 100px;">
+											<li class="normal-image" style="float: right; margin-left: 3px; margin-top: 5px; padding: 0px; background: none; display: list-item;">
+												<a href="/dai.daotao/news/Tin-Tuc-Su-Kien/to-chuyen-mon-toan-67/" title="tổ chuyên môn toán" target="_self" style="background: none !important; text-transform: none; width:84px; height:70px;"><!-- <img width="550" height="359" src="images/img_0017.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="tổ chuyên môn toán" srcset="images/img_0017.jpg" sizes="(max-width: 550px) 100vw, 550px"> -->
+													<%= image_tag(report.picture_url, width: 550, height:359, :class => "attachment-post-thumbnail size-post-thumbnail wp-post-image") %>
+													
+												</a>
+											</li>
+      										<li class="normal_desc_theme4" style="display: list-item;">
+						                  		<span>27/03/2014</span>
+						                     	<p style="margin: 0 !important;font-size:12px !important;padding: 0 !important;display:block !important;">
+						                        <%= report.description %>
+						                     	</p>
+						                  	</li>
+						              	</ul>
+									</li>
+									
+
+						            									
+								</ul>
+							</div>
+						</div>
+						<% end %>
+					</div>
+
+					<div class="col-md-12">
+						<div class="col-md-6">
+							<div class="col-md-12 boxnews">
+								<div class="title" style="width: 99%;">
+									<div class="bgleft">
+										<span>
+											<a href="" style="color: #fff">Kế hoạch</a>
+										</span>
+									</div>
+									<div class="bgright">
+										
+									</div>
+								</div>
+							</div>
+							<div class="col-md-12">
+							<% @report5s.each do |r| %>
+								<div class="content">
+                  					<div class="text">
+                                  		<a href="" title="Kỷ niệm 33 năm Ngày Nhà giáo Việt Nam 20/11"><span class="titlenews"><%= r.title %></span></a><span></span>
+                                  	</div>
+                                    <div id="images-content">
+                                        
+                                        <a href=""><!-- <img width="1280" height="768" src="images/dsc01296.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Kỷ niệm 33 năm Ngày Nhà giáo Việt Nam 20/11" srcset="images/dsc01296.jpg" sizes="(max-width: 1280px) 100vw, 1280px"> -->
+                                        	<%= image_tag(r.picture_url, width:1280, height: 768, :class => "attachment-post-thumbnail size-post-thumbnail wp-post-image") %>
+                                        </a> 
+                                     
+                                    </div>
+                                    <p class="text-1">
+                                    </p><p><%= r.description %></p>
+                                    <p></p>
+                                </div>
+                            <% end %>
+                               <!-- valign="top" style="  border-top: 1px dotted #d4d4d4;" -->
+
+								<ul class="linenews">
+
+									<li><a href="" title="Khai mạc Ngày hội Công nghệ thông tin ngành Giáo dục và Đào tạo tỉnh Quảng Ngãi lần thứ II, năm 2015">Khai mạc Ngày hội Công nghệ thông tin ngành Giáo dục và Đào tạo tỉnh Quảng Ngãi lần thứ II, năm 2015</a>
+									</li>
+
+									<li><a href="" title="Đổi mới căn bản, toàn diện ngành giáo dục: Cần những giải pháp đồng bộ">Đổi mới căn bản, toàn diện ngành giáo dục: Cần những giải pháp đồng bộ</a>
+									</li>
+
+									<li><a href="" title="Một số hình ảnh thi chọn học sinh giỏi quốc gia năm 2016 tại trường THPT chuyên ABC">Một số hình ảnh thi chọn học sinh giỏi quốc gia năm 2016 tại trường THPT chuyên ABC</a>
+									</li>
+
+
+								</ul>
+							</div>
+						</div>
+
+
+						<div class="col-md-6">
+							<div class="col-md-12 boxnews">
+								<div class="title" style="width: 99%;">
+									<div class="bgleft">
+										<span>
+											<a href="" style="color: #fff">Lịch công tác tuần</a>
+										</span>
+									</div>
+									<div class="bgright">
+										
+									</div>
+								</div>
+							</div>
+							<div class="col-md-12">                        
+	                           	<div class="content1">
+									<div class="text">
+										<div class="calender">
+											<a href="/eventdetails/index">
+										    <span class="calday"><%= @event1s.day%></span> 
+										    <center> <span class="calmonth"><%= @event1s.month %>-<%= @event1s.year %></span> </center>
+										 	</a>
+										</div>
+										<a href="/eventdetails/index" title=""><span class="titlenews1"><%= @event1s.name %></span></a><span></span>
+									</div>
+	                           </div>
+
+	                           <div class="content1">
+									<div class="text">
+										<div class="calender">
+											<a href="/eventdetail1s/index">
+										    <span class="calday"><%= @event2s.day%></span> 
+										    <center> <span class="calmonth"><%= @event2s.month %>-<%= @event2s.year %></span> </center>
+										 	</a>
+										</div>
+										<a href="/eventdetail1s/index" title=""><span class="titlenews1"><%= @event2s.name %></span></a><span></span>
+									</div>
+	                           </div>
+
+	                           <div class="content1">
+									<div class="text">
+										<div class="calender">
+											<a href="/eventdetail2s/index">
+										    <span class="calday"><%= @event3s.day%></span> 
+										    <center> <span class="calmonth"><%= @event3s.month %>-<%= @event3s.year %></span> </center>
+										 	</a>
+										</div>
+										<a href="/eventdetail2s/index" title=""><span class="titlenews1"><%= @event3s.name %></span></a><span></span>
+									</div>
+	                           </div>
+
+	                           <div class="content1">
+									<div class="text">
+										<div class="calender">
+											<a href="">
+										    <span class="calday"><%= @event4s.day%></span> 
+										    <center> <span class="calmonth"><%= @event4s.month %>-<%= @event4s.year %></span> </center>
+										 	</a>
+										</div>
+										<a href="" title=""><span class="titlenews1"><%= @event4s.name %></span></a><span></span>
+									</div>
+	                           </div>
+							</div>
+							
+						</div>
+					</div>
+
+					<div class="col-md-12">
+						<div class="col-md-6">
+							<div class="col-md-12 boxnews">
+								<div class="title" style="width: 99%;">
+									<div class="bgleft">
+										<span>
+											<a href="" style="color: #fff">Hoạt động đoàn</a>
+										</span>
+									</div>
+									<div class="bgright">
+										
+									</div>
+								</div>
+							</div>
+							<div class="col-md-12">
+								<div class="content">
+                  					<div class="text">
+                                  		<a href="" title="Kỷ niệm 33 năm Ngày Nhà giáo Việt Nam 20/11"><span class="titlenews">Hành trình tuổi trẻ vì biển đảo quê hương</span></a><span></span>
+                                  	</div>
+                                    <div id="images-content">
+                                        
+                                        <a href=""><!-- <img width="1280" height="768" src="images/anh1.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Kỷ niệm 33 năm Ngày Nhà giáo Việt Nam 20/11" srcset="images/anh1.jpg" sizes="(max-width: 1280px) 100vw, 1280px"> -->
+                                        	<%= image_tag("anh1.jpg", width: 1280, height: 768, :class => "attachment-post-thumbnail size-post-thumbnail wp-post-image") %>
+                                        </a> 
+                                     
+                                    </div>
+                                    <p class="text-1">
+                                    </p>
+                                    <p>
+                                    	Hành trình "Tuổi trẻ vì biển, đảo quê hương" là một trong những hoạt động nhằm thực hiện Nghị quyết trung ương 4 (Khoá X) của Đảng về "Chiến lược biển của Việt Nam đến 2020".Hành trình đã đưa nhiều đoàn viên, thanh niên, sinh viên, doanh nhân trẻ tiêu biểu đến với Quần đảo Trường...
+									</p>
+                                    <p></p>
+                                </div>
+                               <!-- valign="top" style="  border-top: 1px dotted #d4d4d4;" -->
+
+								<ul class="linenews">
+
+									<li><a href="" title="Khai mạc Ngày hội Công nghệ thông tin ngành Giáo dục và Đào tạo tỉnh Quảng Ngãi lần thứ II, năm 2015">Hoạt động đền ơn đáp nghĩa và tri ân các anh hùng, liệt sĩ</a>
+									</li>
+
+									<li><a href="" title="Đổi mới căn bản, toàn diện ngành giáo dục: Cần những giải pháp đồng bộ">Hoạt động giáo dục truyền thống của Đoàn gắn với các sự kiện lịch sử</a>
+									</li>
+
+									<li><a href="" title="Một số hình ảnh thi chọn học sinh giỏi quốc gia năm 2016 tại trường THPT chuyên ABC">Cuộc thi "Tầm nhìn xuyên thế kỷ"</a>
+									</li>
+
+									<li><a href="" title="Truyền thống tôn sư tọng đạo của trường 1">Cuộc vận động "Tuổi trẻ Việt Nam học tập và làm theo lời Bác"</a>
+									</li>
+
+									<li><a href="" title="thu nghiem 1">20 hoạt động tiêu biểu của Đoàn TNCS Hồ Chí Minh 20010-2016</a>
+									</li>
+
+								</ul>
+							</div>
+							
+						</div>
+						<div class="col-md-6">
+							<div class="col-md-12 boxnews">
+								<div class="title" style="width: 99%;">
+									<div class="bgleft">
+										<span>
+											<a href="" style="color: #fff">Khen thưởng</a>
+										</span>
+									</div>
+									<div class="bgright">
+										
+									</div>
+								</div>
+							</div>
+							<div class="col-md-12">
+								<div class="content">
+                  					<div class="text">
+                                  		<a href="" title="Kỷ niệm 33 năm Ngày Nhà giáo Việt Nam 20/11"><span class="titlenews">Hành trình tuổi trẻ vì biển đảo quê hương</span></a><span></span>
+                                  	</div>
+                                    <div id="images-content">
+                                        
+                                        <a href=""><!-- <img width="1280" height="768" src="images/khen-thuong-hsg-quan-tan-binh_1.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Kỷ niệm 33 năm Ngày Nhà giáo Việt Nam 20/11" srcset="images/khen-thuong-hsg-quan-tan-binh_1.jpg" sizes="(max-width: 1280px) 100vw, 1280px"> -->
+                                        	<%= image_tag("khen-thuong-hsg-quan-tan-binh_1.jpg", width:1280, height: 768, :class=> "attachment-post-thumbnail size-post-thumbnail wp-post-image") %>
+                                        </a> 
+                                     
+                                    </div>
+                                    <p class="text-1">
+                                    </p>
+                                    <p>
+                                    	Trong năm học 2014-2015, có 3.092 cháu đạt danh hiệu học sinh giỏi, tăng gần 500 cháu so với năm học 2013-2014, trong đó có 2 cháu đạt giải quốc tế, 9 cháu đạt giải quốc gia, 38 cháu đạt giải thành phố.
+									</p>
+                                    <p></p>
+                                </div>
+                               <!-- valign="top" style="  border-top: 1px dotted #d4d4d4;" -->
+
+								<ul class="linenews">
+
+									<li><a href="" title="Khai mạc Ngày hội Công nghệ thông tin ngành Giáo dục và Đào tạo tỉnh Quảng Ngãi lần thứ II, năm 2015">Lễ tuyên dương, khen thưởng học sinh giỏi đạt giải các cấp năm học 2015-2016</a>
+									</li>
+
+									<li><a href="" title="Đổi mới căn bản, toàn diện ngành giáo dục: Cần những giải pháp đồng bộ">Lễ tuyên dương khen thưởng Học sinh giỏi Thành phố năm học 2014 - 2015</a>
+									</li>
+
+									<li><a href="" title="Một số hình ảnh thi chọn học sinh giỏi quốc gia năm 2016 tại trường THPT chuyên ABC">Lễ tuyên dương, khen thưởng các cháu học sinh giỏi đoạt giải các cấp năm học 2015-2016</a>
+									</li>
+
+									<li><a href="" title="Truyền thống tôn sư tọng đạo của trường 1">Tuyên dương khen thưởng học sinh giỏi năm học 2015- 2016</a>
+									</li>
+
+									<li><a href="" title="thu nghiem 1">Tuyên dương khen thưởng học sinh giỏi năm học 2015- 2016</a>
+									</li>
+
+								</ul>
+							</div>
+							
+						</div>
+
+					</div>
+					
+				</div>
+
+
+
+				<%= render "commons/sidebar", {report1s: @report1s} %>
+			</div><!-- end row -->
+
+		</div><!-- end container -->
+	</div> <!-- end maincontent -->
+</div><!-- end main -->

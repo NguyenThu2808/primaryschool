@@ -1,0 +1,35 @@
+<% provide(:title, "Thông tin chi tiết một sự kiện") %>
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @event.name %>
+</p>
+
+<p>
+  <strong>Content:</strong>
+  <%= @event.content %>
+</p>
+
+<p>
+  <strong>Day:</strong>
+  <%= @event.day %>
+</p>
+
+<p>
+  <strong>Month:</strong>
+  <%= @event.month %>
+</p>
+
+<p>
+  <strong>Year:</strong>
+  <%= @event.year %>
+</p>
+
+<p>
+  <strong>Picture:</strong>
+  <%= image_tag(@event.picture_url, width: 300) if @event.picture.present? %>
+</p>
+
+<%= link_to 'Edit', edit_event_path(@event) %> |
+<%= link_to 'Back', events_path %>

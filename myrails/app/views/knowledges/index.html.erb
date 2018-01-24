@@ -1,0 +1,53 @@
+<div class="main">
+	<div class="main_content"> <!-- phan noi dung -->
+		<div class="container" style="margin: 50px auto;">
+			<div class="row">
+				<div class="col-md-9 boxleft" style="border-top: 1px solid #eaeaea; border-right: 1px solid #eaeaea; border-bottom: 1px solid #eaeaea;">
+					<div class="col-md-12 boxnews">
+						<div class="title" style="width: 100%;">
+							<div class="bgleft">
+								<span>
+									<a href="" style="color: #fff;">Tin tức & sự kiện</a>		
+								</span>
+								<span class="breakcolumn">>></span>
+								
+								<span>
+									<a href="/intros/core_values" style="color: #fff;">Thông tin giáo dục</a>
+								</span>
+								<span class="breakcolumn">>></span>
+							</div>
+							<div class="bgright">
+								
+							</div>
+						</div>
+					</div>
+
+					<% @report4s.each do |report| %>
+					<div class="col-md-12">
+						<div class="content">
+							<div class="text>">
+								<div class="main_frontpage">
+									<h3 style="color: #1F1F1F;margin: 10px 0;" title="Nâng tầm cho Trường chuyên ABC">
+	       								<a href="" title="Nâng tầm cho Trường chuyên ABC" target="_self" style="background: none !important; text-decoration: none; font-size: 23px;"><%= report.title %></a>
+	    							</h3>
+									<div class="col-md-3" id="images-content1">
+										<a href="" title="Nâng tầm cho Trường chuyên ABC" target="_self" style="border: none;background: none !important;"></a>
+										<%= image_tag(report.picture_url, width: 550, height:359, :class => "attachment-post-thumbnail size-post-thumbnail wp-post-image") %>
+									</div>
+									<div class="col-md-9 text-1">
+										<p>
+										<%= report.description %> <a href="<%= knowledges_knowledgedetail_path(report.category_id, report.id) %>" class="more-link">Xem chi tiết...</a>
+										
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<% end %>
+				</div>
+				<%= render "commons/sidebar", {report1s: @report1s} %>
+			</div>
+		</div><!-- end container -->
+	</div> <!-- end maincontent -->
+</div><!-- end main -->

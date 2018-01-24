@@ -1,0 +1,35 @@
+<% provide(:title, "Thông tin chi tiết một loại tin") %>
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @category.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @category.description %>
+</p>
+
+<h3>Tin tức</h3>
+<% @reports.each do |report| %>
+  <div>
+    <strong><%= report.title %></strong>
+    <br />
+    <p><%= report.description %></p>
+    <br />
+    <p><%= report.picture %></p>
+    <br />
+    <p><%= report.content %></p>
+    <br />
+    <p><%= report.keyword %></p>
+    <br />
+    <p><%= report.hot %></p>
+    
+    <p><%= link_to 'Delete', report_path(report), method: :delete, data: { confirm: 'Are you sure?' } %></p>
+  </div>
+<% end %>
+<%= render partial: 'reports/form', locals: { report: @report } %>
+
+<%= link_to 'Edit', edit_category_path(@category) %> |
+<%= link_to 'Back', categories_path %>

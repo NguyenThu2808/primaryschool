@@ -1,0 +1,40 @@
+<% provide(:title, "Thông tin chi tiết tin") %>
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @report.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @report.description %>
+</p>
+
+<p>
+  <strong>Picture:</strong>
+  <%= image_tag(@report.picture_url, width: 300) if @report.picture.present? %>
+</p>
+
+<p>
+  <strong>Content:</strong>
+  <%= @report.content %>
+</p>
+
+<p>
+  <strong>Keyword:</strong>
+  <%= @report.keyword %>
+</p>
+
+<p>
+  <strong>Hot:</strong>
+  <%= @report.hot %>
+</p>
+
+<p>
+  <strong>Category:</strong>
+  <%= @report.category_id %>
+</p>
+
+<%= link_to 'Edit', edit_report_path(@report) %> |
+<%= link_to 'Back', reports_path %>

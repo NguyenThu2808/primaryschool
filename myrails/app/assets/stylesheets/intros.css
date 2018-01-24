@@ -1,0 +1,81 @@
+.h3_text{
+	/*margin-left: 10px;*/
+	/*color: #16987f;*/
+}
+
+.intros_content hr{
+	/*padding: 0 10px;*/
+	margin: 0px;
+}
+
+.facilities_picture{
+	padding: 10px 50px;
+}
+
+.facilities_image{
+	padding: 10px 0;
+}
+
+.comment-title{
+	background-color: #eaeaea;
+	color: #fff;
+	margin: 0px;
+	padding: 5px 0;
+}
+
+.comment-title>span{
+	color: #fff;
+    background: #66c7ff;
+    font-family: 'alter', Arial, Helvetica, sans-serif; 
+    padding: 5px 10px;
+    color: #fff;
+    font-size: 20px;
+    position: relative;
+}
+
+.comment-content{
+	font-weight: bold;
+	margin-top: 10px;
+    display: inline-block;
+}
+
+.comment-form>hr{
+	margin: 0px;
+}
+
+.media-body .form-control {
+	font-size: 14px;
+   
+}
+.media-body .form-control{
+	padding: 25px 8px;
+}
+
+.history_img{
+	padding: 10px 85px;
+}
+
+.itemTitle{
+	font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 110%;
+    text-align: center;
+}
+
+
+.teachers_tb tr td{
+	width: 105px;
+    height: 35px;
+}
+
+
+.vision{
+	float: left; clear: both;
+	height: 120px;
+}
+
+
+.form_contact{
+	padding-top: 50px;
+}

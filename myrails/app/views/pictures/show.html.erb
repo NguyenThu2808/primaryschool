@@ -1,0 +1,20 @@
+<% provide(:title, "Thông tin chi tiết ảnh") %>
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @picture.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @picture.description %>
+</p>
+
+<p>
+  <strong>Urlimage:</strong>
+  <%= image_tag(@picture.urlimage_url, width: 300) if @picture.urlimage.present? %>
+</p>
+
+<%= link_to 'Edit', edit_picture_path(@picture) %> |
+<%= link_to 'Back', pictures_path %>

@@ -1,0 +1,42 @@
+
+<!-- yeild -->
+<div class="main">
+	<div class="main_content"> <!-- phan noi dung -->
+		<div class="container" style="margin: 50px auto;">
+			<div class="row">
+				
+				<div class="col-md-9 boxleft" style="border-top: 1px solid #eaeaea; border-right: 1px solid #eaeaea; border-bottom: 1px solid #eaeaea;">
+				
+					<div class="col-md-12 boxnews">
+						<div class="title" style="width: 100%;">
+							<div class="bgleft">
+								<span>
+									<a href="" style="color: #fff">Thư viện ảnh</a>
+								</span>
+							</div>
+							<div class="bgright">
+								
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-12" style="padding-top: 20px;">
+					<% @pictures.each do |album| %>
+						<div class="col-md-4 album">							
+							<%= image_tag(album.urlimage_url, :class => "imagealbum")  %>
+							<div class="date-album">
+								<span class="glyphicon glyphicon-calendar calendar1">
+									<%= Time.now %>
+
+								</span>
+							</div>
+							<a href="#"><center><%= album.name %></center></a>
+						</div>	
+					<% end %>
+					</div>	
+				</div>	
+				<%= render "commons/sidebar", {report1s: @report1s} %>
+			</div>
+		</div><!-- end container -->
+	</div> <!-- end maincontent -->
+</div><!-- end main -->

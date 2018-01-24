@@ -1,0 +1,33 @@
+<% provide(:title, "Thông tin chi tiết album") %>
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @album.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @album.description %>
+</p>
+
+<p>
+  <strong>Picture:</strong>
+  <%= image_tag(@album.picture_url, width: 300) if @album.picture.present? %>
+</p>
+
+<h3>Pictures</h3>
+<% @pictures.each do |picture| %>
+  <div>
+    <strong><%= picture.name %></strong>
+    <br />
+    <p><%= picture.description %></p>
+    <br />
+    <p><%= picture.urlimage %></p>
+    <p><%= link_to 'Delete', picture_path(picture), method: :delete, data: { confirm: 'Are you sure?' } %></p>
+  </div>
+<% end %>
+<%= render partial: 'pictures/form', locals: { picture: @picture } %>
+
+<%= link_to 'Edit', edit_album_path(@album) %> |
+<%= link_to 'Back', albums_path %>

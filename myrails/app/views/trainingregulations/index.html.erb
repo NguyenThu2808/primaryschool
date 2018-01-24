@@ -1,0 +1,69 @@
+<div class="main">
+	<div class="main_content"> <!-- phan noi dung -->
+		<div class="container" style="margin: 50px auto;">
+			<div class="row">
+				<div class="col-md-9 boxleft" style="border-top: 1px solid #eaeaea; border-right: 1px solid #eaeaea; border-bottom: 1px solid #eaeaea;">
+					<div class="col-md-12 boxnews">
+						<div class="title" style="width: 100%;">
+							<div class="bgleft">
+								<span>
+									<a href="" style="color: #fff;">Tin tức & sự kiện</a>		
+								</span>
+								<span class="breakcolumn">>></span>
+								<% @album3s.each do |n| %>
+								<span>
+									<a href="/intros/core_values" style="color: #fff;"><%= n.name %></a>
+								</span>
+								<span class="breakcolumn">>></span>
+								
+							</div>
+							<div class="bgright">
+								
+							</div>
+						</div>
+					</div>
+					
+					
+					<div class="intros_content col-md-12" style="padding: 0 10px;">
+						<h3 class=""><a href="/intros/core_values"><%= n.name %></a></h3>
+						<hr>
+						<div>
+							<div style="padding: 10px 0;">
+								<span class="glyphicon glyphicon-calendar calendar"></span>
+								<span><%= n.created_at %></span>
+							</div>
+							<hr>
+							<div>
+								<p><%= raw n.description %></p>
+							</div>
+						</div>
+					</div>
+					<% end %>
+					<!-- comment -->
+					<div class="comment col-md-12" style="padding-left: 10px;">
+						<div style="border: 1px solid #eaeaea;">
+							<h2 class="comment-title">
+								<span>Bình luận</span>
+							</h2>
+							<div class="comment-right"></div>
+						</div>
+						<div class="comment-form">
+							<span class="comment-content">0 Comments</span>
+							<hr>
+							<div class="media">
+								<a class="pull-left" href="#">
+									<%= image_tag("ava.jpg", :class => "media-object") %>
+								</a>
+								<div class="media-body">
+									<input type="text" name="" class="form-control" placeholder="Add a Comment">
+								</div>
+							</div>
+							<input type="button" name="" value="Post" class="btn btn-info" style="float: right; margin: 5px 0;">
+						</div>
+					</div> <!-- end comment -->
+				</div>
+				<%= render "commons/sidebar", {report1s: @report1s} %>
+			</div>
+		</div><!-- end container -->
+	</div> <!-- end maincontent -->
+</div><!-- end main -->

@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @educate.name %>
+</p>
+
+<p>
+  <strong>Content:</strong>
+  <%= @educate.content %>
+</p>
+
+<p>
+  <strong>Picture:</strong>
+  <%= @educate.picture %>
+</p>
+
+<%= link_to 'Edit', edit_educate_path(@educate) %> |
+<%= link_to 'Back', educates_path %>

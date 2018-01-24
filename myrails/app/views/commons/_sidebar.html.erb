@@ -1,0 +1,132 @@
+<div class="col-md-3 boxright" style="border-top: 1px solid #eaeaea; border-left: 1px solid #eaeaea; border-bottom: 1px solid #eaeaea;">
+	<div id="right-sidebar">
+		<div id="thongbao">
+		   	<div class="bantin">
+		      	<div id="newsticker-demo">
+		         	<div style="visibility: visible; overflow: hidden; position: relative; z-index: 2; left: 0px;" class="newsticker-jcarousellite">
+			            <ul style="text-align: left; position: relative; list-style-type: none; z-index: 1;">
+			            	
+			               <li><a href="/dai.daotao/thong-bao/Thong-bao/Truong-DHKT-to-chuc-cac-lop-hoc-bo-sung-kien-thuc-nam-2016-11/" title="Trường ĐHKT tổ chức...">
+			                 Trường ĐHKT tổ chức...<%= image_tag("icon_new.jpg") %> </a>
+			               </li>
+			            
+			               <li><a href="/dai.daotao/thong-bao/Thong-bao/Thong-bao-ve-viec-canh-giac-voi-toi-pham-lua-gat-trom-cap-tai-san-dip-thi-cu-3/" title="Thông báo về việc...">
+			                 Thông báo về việc...<%= image_tag("icon_new.jpg") %> </a>
+			               </li>
+			            
+			               <li><a href="/dai.daotao/thong-bao/Thong-bao/Ve-viec-nhan-don-phuc-tra-bai-thi-tuyen-sinh-sau-dai-hoc-dot-2-nam-2015-7/" title="Về việc nhận đơn...">
+			                 Về việc nhận đơn...<%= image_tag("icon_new.jpg") %> </a>
+			               </li>
+			            
+			               <li><a href="/dai.daotao/thong-bao/Thong-bao/Truong-DHKT-to-chuc-cac-lop-hoc-bo-sung-kien-thuc-nam-2016-5/" title="Trường ĐHKT tổ chức...">
+			                 Trường ĐHKT tổ chức...<%= image_tag("icon_new.jpg") %> </a>
+			               </li>
+			            
+			               <li><a href="/dai.daotao/thong-bao/Thong-bao/Thong-bao-ve-viec-nhan-don-phuc-tra-bai-thi-tuyen-sinh-sau-dai-hoc-dot-1-nam-2015-9/" title="Thông báo về việc...">
+			                 Thông báo về việc...<%= image_tag("icon_new.jpg") %> </a>
+			               </li>
+			            
+			               <li><a href="/dai.daotao/thong-bao/Thong-bao/THONG-BAO-VE-VIEC-MO-LOP-TOEIC-5-VA-TOEIC-6-CHO-SINH-VIEN-NGANH-TAI-CHINH-NGAN-HANG-BAC-DAI-HOC-LIEN-THONG-TU-4/" title="THÔNG BÁO VỀ VIỆC MỞ...">
+			                 THÔNG BÁO VỀ VIỆC MỞ...<%= image_tag("icon_new.jpg") %> </a>
+			               </li>
+			            
+			               <li><a href="/dai.daotao/thong-bao/Thong-bao/Truong-DHKT-to-chuc-cac-lop-hoc-bo-sung-kien-thuc-nam-2016-6/" title="Trường ĐHKT tổ chức...">
+			                 Trường ĐHKT tổ chức...<%= image_tag("icon_new.jpg") %> </a>
+			               </li>
+			            
+			               <li><a href="/dai.daotao/thong-bao/Thong-bao/Truong-DHKT-to-chuc-cac-lop-hoc-bo-sung-kien-thuc-nam-2016-10/" title="Trường ĐHKT tổ chức...">
+			                 Trường ĐHKT tổ chức...<%= image_tag("icon_new.jpg") %> </a>
+			               </li>
+			            
+			               <li><a href="/dai.daotao/thong-bao/Thong-bao/DANH-SACH-HOC-SINH-DAT-GIAI-CAP-THANH-PHO-KY-THI-HOC-SINH-GIOI-GIAI-TOAN-TREN-MAY-TINH-CAM-TAY-NAM-HOC-2015-2016-2/" title="DANH SÁCH HỌC SINH...">
+			                 DANH SÁCH HỌC SINH...<%= image_tag("icon_new.jpg") %> </a>
+			               </li>
+			            
+			               <li><a href="/dai.daotao/thong-bao/Thong-bao/Lich-danh-gia-ho-so-chuyen-mon-cua-cac-thi-sinh-du-tuyen-nghien-cuu-sinh-dot-2-nam-2015-8/" title="Lịch đánh giá hồ sơ...">
+			                 Lịch đánh giá hồ sơ...<%= image_tag("icon_new.jpg") %> </a>
+			               </li>
+			            
+			            </ul>
+		         	</div>
+		      	</div>
+		  	</div>
+		</div>
+
+		<div class="widget">
+		   	<h2>TIÊU ĐIỂM</h2>
+		   	<% @report1s.each do |r| %>
+		   	<div class="content1">
+		      	<div class="text">								            
+					<div class="col-md-4 calender1">
+						<a href="" title="tổ chuyên môn toán">
+							<!-- <img width="1100" height="1000" src="images/noname9.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="tổ chuyên môn toán" srcset="images/noname9_4.png" sizes="(max-width: 1100px) 100vw, 1100px"> -->
+							<%= image_tag(r.picture_url) %>
+						</a>
+					</div>
+					<div class="col-md-8">
+						<a href="" title="tổ chuyên môn toán">
+						<span class="titlenews1"><%= r.title %></span></a><span></span>
+					</div>
+		      	</div>
+		   	</div>
+		   <% end %>
+		   	
+		   
+
+		   							   
+		</div>
+
+
+
+		<div id="wp_statsmechanic-3" class="widget widget_wp_statsmechanic">
+		   <h2>THỐNG KÊ TRUY CẬP</h2>
+		   <div id="mvcwid" style="font-size:2; text-align:Left;color:;">
+		      <div id="mvctable">
+		         <table width="100%">
+		            <tbody><tr>
+		               <td style="font-size:2; text-align:Left;color:;"><%= image_tag("users.png") %>Đang truy cập :
+		            00001</td>
+		            </tr>
+		            <tr>
+		               <td style="font-size:2; text-align:Left;color:;"><%= image_tag("today.png") %>Hôm nay :
+		            00028</td>
+		            </tr>
+		            <tr>
+		               <td style="font-size:2; text-align:Left;color:;"><%= image_tag("month.png") %>Tháng hiện tại
+		            : 00215</td>
+		            </tr>
+		            <tr>
+		               <td style="font-size:2; text-align:Left;color:;"><%= image_tag("hits.png") %>Tổng lượt truy cập : <strong>18481</strong></td>
+		            </tr>
+		         </tbody></table>
+		      </div>
+		      <div id="mvcip"></div>
+		            <div style="position:relative;text-align:center;margin-top:5px; margin-bottom: 10px;"> <iframe src="http://www.thetimenow.com/clock/vietnam/hanoi?t=n&amp;embed=1&amp;text=15&amp;textdate=15&amp;format=24&amp;digitalclock=36&amp;analogclock=60&amp;letter_spacing=-2&amp;bordersize=0&amp;bordercolor=F7F7F7&amp;bgcolor=FFFFFF&amp;colorloc=3311BD&amp;colordigital=2C8EBF&amp;colordate=000000&amp;styleloc=bold&amp;styledigital=normal&amp;styledate=normal&amp;right=0" width="230" height="90" style="border:none;overflow:hidden;" scrolling="no"></iframe><a style="position:absolute; top:0; left:0; display:inline-block; width:200px; height:90px; z-index:50;" target="_blank" rel="nofollow"></a>
+		            </div>
+		   </div>
+		</div>
+
+
+		<div id="text-3" class="widget widget_text"><h2>LIÊN KẾT WEBSITE</h2>			
+			<div class="textwidget"><p><marquee onmouseover="this.stop()" onmouseout="this.start()" scrollamount="2" direction="up" width="100%" height="110" align="center"><br>
+		      <span id="ctl00_lblLienKetWeb" class="textlienketweb"><br>
+		      <a target="_blank" href="http://hcmup.edu.vn/" title="Đại Học sư phạm Tp HCM">Đại Học sư phạm Tp HCM</a><br>
+		      <a target="_blank" href="http://www.hnue.edu.vn/" title="Đại Học sư phạm Hà Nội">Đại Học sư phạm Hà Nội</a><br>
+		      <a target="_blank" href="http://www.vnuhcm.edu.vn/" title="Đại Học Quốc gia Tp HCM">Đại Học Quốc gia Tp HCM</a><br>
+		      <a target="_blank" href="http://www.vnu.edu.vn/home/" title="Đại Học Quốc gia Hà Nội">Đại Học Quốc gia Hà Nội</a><br>
+		      <a target="_blank" href="http://www.udn.vn/" title="Trường Đại Học Đà Nẵng">Trường Đại Học Đà Nẵng</a><br>
+		      <a target="_blank" href="http://www.husc.edu.vn/" title="Trường Đại Học khoa học Huế">Trường Đại Học    khoa học Huế</a><br>
+		      <a target="_blank" href="http://www.hust.edu.vn/" title="Trường Đại Học Bách Khoa Hà Nội">Trường Đại Học Bách Khoa Hà Nội</a><br>
+		      <a target="_blank" href="http://www.hmu.edu.vn/" title="Trường Đại Học Y Hà Nội">Trường Đại Học Y Hà Nội</a><br>
+		      <a target="_blank" href="http://moodle.yds.edu.vn/" title="Trường Đại Học Y Dược TP HCM">Trường Đại Học Y Dược TP HCM</a><br>
+		      <a target="_blank" href="http://www.huemed-univ.edu.vn/" title="Trường Đại Học Y Dược Huế">Trường Đại Học Y Dược Huế</a><br>
+		      <a target="_blank" href="http://www.qnu.edu.vn/" title="Trường Đại Học Qui Nhơn">Trường Đại Học Qui Nhơn</a><br>
+		      <a target="_blank" href="http://pdu.edu.vn/" title="Trường Đại Học Phạm Văn Đồng">Trường Đại Học Phạm Văn Đồng</a><br>
+		      <a target="_blank" href="http://chuyen-qb.com/" title="Trường THPT chuyên Quảng Bình">Trường THPT chuyên Quảng Bình</a><br>
+		      <a target="_blank" href="http://thpttranquoctuan.com/" title="Trường THPT Trần Quốc Tuấn">Trường THPT Trần Quốc Tuấn</a><p></p>
+		      <p>                    <br>
+		      </p></span></marquee></p>
+		      </div>
+		</div>
+	</div><!-- end rightbar -->
+</div> <!-- endboxright -->
